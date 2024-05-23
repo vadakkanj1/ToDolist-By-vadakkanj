@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f06, #4a90e2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+form input[type="text"] {
+    flex: 2;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+}
+
+form input[type="time"] {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 0;
+}
+
+form button {
+    padding: 10px;
+    background: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #218838;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    padding: 10px;
+    background: #fff;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+}
+
+li span {
+    font-weight: bold;
+}
+
+li .edit, li .delete, li .time {
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+li .time {
+    color: #007bff;
+}
+
+li .edit i, li .delete i {
+    font-size: 18px;
+}
+
+button.edit, button.delete {
+    background: none;
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button.delete {
+    color: #dc3545;
+}
+
+button.edit {
+    color: #ffc107;
+}
+
+button.edit:hover {
+    color: #e0a800;
+}
+
+button.delete:hover {
+    color: #c82333;
+}
+
+@media (max-width: 400px) {
+    form input, form button {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    li {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    button.edit, button.delete {
+        margin-top: 5px;
+        width: 100%;
+        text-align: center;
+    }
+
+    button.edit {
+        margin-right: 0;
+    }
+}
